@@ -33,7 +33,7 @@ type Block struct {
 	PrevHash  string
 }
 
-// this is blockchain itself
+// Blockchain this is blockchain itself
 var Blockchain []Block
 
 type Message struct {
@@ -222,7 +222,7 @@ func handleConn(conn net.Conn) {
 		}
 	}()
 
-	for _ = range bcServer {
+	for range bcServer {
 		spew.Dump(Blockchain)
 	}
 }
