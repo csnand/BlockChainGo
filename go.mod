@@ -1,5 +1,7 @@
 module github.com/csnand/BlockChainGo
 
+go 1.14
+
 require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
 	github.com/gorilla/mux v1.7.0
